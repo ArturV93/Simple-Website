@@ -1,6 +1,0 @@
-if you have to support IE9 and less
-     you have to use javascript
-else
-     you can use css animate solution
-
-     
