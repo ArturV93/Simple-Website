@@ -1,0 +1,309 @@
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+
+.text-center {
+  text-align: center;
+}
+
+.card-action a {
+	float: left;
+}
+.center-column {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.column-side {
+    float: left;
+    width: 20%;
+}
+
+.column-middle {
+    float: left;
+    width: 60%;
+}
+
+.col-50{
+	width: 49%;
+	text-align: center;
+    display: inline-block;
+}
+
+.card{
+min-height: 175px;
+vertical-align: middle;
+width: 24%;
+margin: auto;
+}
+
+.card-column{
+min-height: 175px;
+vertical-align: middle;
+width: 70%;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 10px;
+}
+
+
+.card-right-column{
+	position: relative;
+	min-height: 160px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.inline-block{
+	display: inline-block;
+}
+.bg-gray{
+	background-color: #ecf0f1;
+}
+.bg-red{
+	background-color: #FF4136;
+}
+.bg-yellow{
+	background-color: #FFDC00;
+}
+.bg-dark-red{
+	background-color: #73242C;
+}
+.bg-orange{
+	background-color: #FF851B;
+}
+
+.red{
+	color: #FF4136;
+}
+.yellow{
+	color: #FFDC00;
+}
+.dark-red{
+	color: #73242C;
+}
+.orange{
+	color: #FF851B;
+}
+
+.height-box{
+	height: 100px;
+	
+}
+
+.border-red{
+	border: 1px solid #FF4136;
+}
+
+.border-yellow{
+	border: 1px solid #FFDC00;
+}
+
+.border-orange{
+	border: 1px solid #FF851B;
+}
+
+.border-dark-red{
+	border: 1px solid #73242C;
+}
+
+.border-red-top{
+	border-top: 1px solid #FF4136;
+}
+
+.border-yellow-top{
+	border-top: 1px solid #FFDC00;
+}
+
+.border-orange-top{
+	border-top: 1px solid #FF851B;
+}
+
+.border-dark-red-top{
+	border-top: 1px solid #73242C;
+}
+
+.place{
+	padding-left: 20%;
+	bottom: 12%;
+	position: absolute;
+}
+
+.image{
+  width: 70px;
+  margin: 10px;
+}
+
+h3{
+  font-weight: lighter;
+  margin-left: 90px;
+  margin-top: -70px;
+  color: #fff;
+}
+
+.card a, .card-column a{
+  display: block;
+  padding: 5px;
+  color: #bbb;
+  line-height: 1.4em;
+  font-size: 1.2em;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+.mainbox{
+  padding: 10px 0;
+  font-family: calibri;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.sidebox{
+  padding: 5px 0;
+  font-family: calibri;
+  box-sizing: border-box;
+  justify-content: center;
+  display: block;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+
+.slides {display:none}
+
+#slideshowcontainer {
+  position: relative;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.size{
+	width:100%; 
+	height: 250px; 
+}
+
+.small-size{
+	width:100%; 
+	height: 100px; 
+}
+
+.text {
+  color: #ffa500;
+  font-size: 60px;
+  margin: 8px 80px;
+  position: absolute;
+  top: 5px;
+  width: 40%;
+  text-align: left;
+  overflow: hidden;
+  transition: opacity 1s;
+}
+
+.borderSlide{
+	border-bottom: 2px solid #7f8c8d;
+	padding: 0px 10px;
+}
+.subtext {
+  overflow: hidden;
+  color: #7f8c8d;
+  font-size: 20px;
+  margin: 0px 80px;
+  position: absolute;
+  top: 170px;
+  width: 40%;
+  text-align: left;
+transition: opacity 1s;
+}
+
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #ffdfa6;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #ffa500;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.bottom{
+	position: absolute;
+	padding: 10px;
+	width: 100%;
+	bottom: 0px;
+	left: 0;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.block{
+	display: block;
+}
+.btn {
+  margin-bottom: 5px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #f39c12;
+  font-size: 14px;
+  background: #fff;
+  padding: 10px 20px 10px 20px;
+  border: solid #f39c12 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #f39c12;
+  color: #fff;
+  text-decoration: none;
+}
+
+.sub-nav{
+	margin: 5px;
+
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    background-color: #ecf0f1;
+}
+
+.center-images{
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 10px;
+}
+div .mockup1 {
+opacity:1; 
+}
+
+div .mockup2{
+opacity:0;
+transition: opacity 1s; 
+}
+
